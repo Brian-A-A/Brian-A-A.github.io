@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/script2.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="hContainer">
+        <div class="logo_container">
+          <img class="logo" src="img/B_Icon.jpg" alt="logo" />
+        </div>
+        <i class="fa fa-bars navBtn"></i>
+        <div>
+          <nav class="navbar">
+            <ul class="uItem">
+              <a href=""><li class="active_page lItem">Home</li></a>
+              <a href="#am"><li class="lItem">About Me</li></a>
+              <a href="#ed"><li class="lItem">Education</li></a>
+              <a href="#skls"><li class="lItem">Skills</li></a>
+              <a href="#cm"><li class="lItem">Contact Me</li></a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- home section -->
+    <section class="section_home">
+      <div class="container">
+        <div class="row txt-alignment">
+          <div class="col-md-7">
+            <div class="format_1">
+              Hi! It's me <span class="format_2">Brian</span>
+            </div>
+            <div class="format_3"><span>Web Developer</span></div>
+            <div class="format_4" id="typingEffect"></div>
+            <div class="c_icon_container" id="c_icon_container_id">
+              <a href="https://github.com/Brian-A-A" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.facebook.com/brian.alabado/" target="_blank"
+                ><i class="fa-brands fa-facebook c_Icon"></i
+              ></a>
+              <a href="mailto:brian.alabado22@gmail.com"
+                ><i class="fa-brands fa-google c_Icon"></i
+              ></a>
+              <a href="mailto:brian.alabado22@yahoo.com"
+                ><i class="fa-brands fa-yahoo c_Icon"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <img class="m_pic" src="img/profile_pic.png" alt="profile_pic" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about_me section -->
+    <section class="section_o" id="am">
+      <div class="container">
+        <h2 class="secTitle"><i class="fa-solid fa-book"></i> About Me</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 ame_pic_container">
+              <img
+                class="ame_pic"
+                src="img/profile_pic.png"
+                alt="profile_pic"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="ame_desc">
+                <p>
+                  Equipped with intermediate proficiency in web development, I
+                  am a dedicated learner, always eager to expand my skill set. I
+                  approach each project with a willingness to embrace new
+                  challenges and adapt to emerging technologies. Collaboration
+                  is at the heart of my work ethic; I thrive in team
+                  environments, valuing the input and expertise of my colleagues
+                  to achieve superior results.
+                </p>
+                <p>
+                  My enthusiasm for my profession fuels my commitment to
+                  excellence, propelling me to continuously hone my abilities
+                  and deliver impactful solutions. With a passion for what I do,
+                  I am driven to make a meaningful impact through my work.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row about_me_row">
+            <div class="col-md-3 about_me_box">
+              <img class="img-fluid" src="img/arduino-2.png" alt="img" />
+              <div class="overlay-container">
+                <span class="overlay-txt">Machine Learning</span>
+              </div>
+            </div>
+            <div class="col-md-3 about_me_box">
+              <img class="img-fluid" src="img/coding-img.png" alt="img" />
+              <div class="overlay-container">
+                <span class="overlay-txt">Coding</span>
+              </div>
+            </div>
+            <div class="col-md-3 about_me_box">
+              <img class="img-fluid" src="img/photoshop-img.png" alt="img" />
+              <div class="overlay-container">
+                <span class="overlay-txt">Designing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- education section -->
+    <section class="section_e" id="ed">
+      <div class="container">
+        <h2 class="secTitle">
+          <i class="fa-solid fa-graduation-cap"></i> Education
+        </h2>
+        <div class="row">
+          <div class="col-md-3 col-ed-1">
+            <img class="ed_01" src="img/ed_01.png" alt="ed_01.png" />
+            <p class="col-ed-1-txt1">City College of Angeles</p>
+            <p class="col-ed-1-txt2">Bachelor of Science in Computer Science</p>
+          </div>
+          <div class="col-md-6">
+            <img class="ed_02" src="img/ed_02.png" alt="ed_02.png" />
+            <p class="col-ed-2-txt1">
+              "I pursued a degree in computer science at CCA and completed my
+              studies in 2022. During this academic journey, I acquired
+              proficiency in diverse software development tools, enhancing my
+              understanding of the field of computer science."
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Front-End Language
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/HTML5_logo.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/CSS3_logo.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/JavaScript-logo.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/React_Logo.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/JQuery-logo.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Programming Language
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/PHP-log.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/Python-logo.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/Java-icon.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Graphic Designing
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/The_GIMP_icon.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/Figma-log.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/Adobe_Photoshop_CC_icon.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Database Management
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/PhpMyAdmin_logo.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-4">
+                          <img
+                            src="
+                          img/MySQL_logo.png"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills section -->
+    <section class="section_o" id="skls">
+      <div class="container">
+        <h2 class="secTitle"><i class="fa-regular fa-lightbulb"></i> Skills</h2>
+        <div class="row wrapper_skls">
+          <div class="col-md-6">
+            <div class="s_title">
+              <span>HTML</span> <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="myProgressBar-html"></div>
+            </div>
+            <div class="s_title">
+              <span>CSS</span> <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="myProgressBar-css"></div>
+            </div>
+            <div class="s_title">
+              <span>Bootstrap</span> <i class="fa-brands fa-bootstrap"></i>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="myProgressBar-bootstrap"></div>
+            </div>
+            <div class="s_title">
+              <span>Photoshop</span> <i class="fa-solid fa-image"></i>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="myProgressBar-photo"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="s_title">
+              <span>Javascript</span> <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="myProgressBar-js"></div>
+            </div>
+            <div class="s_title">
+              <span>JQuery</span> <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="myProgressBar-jquery"></div>
+            </div>
+            <div class="s_title">
+              <span>PHP</span> <i class="fa-brands fa-php"></i>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="myProgressBar-php"></div>
+            </div>
+            <div class="s_title">
+              <span>UI/UX</span> <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="myProgressBar-layout"></div>
+            </div>
+          </div>
+          <h4 class="proj-header">Projects</h4>
+          <p>Explore my e-commerce project websites</p>
+          <div class="col-md-6 proj-container">
+            <a href="https://americansurvivalzone.com/"
+              ><div class="proj-container-1">Project 1</div></a
+            >
+          </div>
+          <div class="col-md-6">
+            <a href="https://usaflagventure.com/"
+              ><div class="proj-container-2">Project 2</div></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact_me section -->
+    <section class="section_e" id="cm">
+      <div class="container">
+        <h2 class="secTitle">
+          <i class="fa-solid fa-phone-volume"></i> Contact Me
+        </h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="invitation-msg-1">What's up!</p>
+            <div class="msg-container">
+              <p class="an_msg">Modern Design?</p>
+              <p class="an_msg">Optimize Mobile & Desktop Design?</p>
+              <p class="an_msg">Futuristic Features?</p>
+              <p class="an_msg">Ping me now!</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="invitation-msg-2">
+              Interested in leveraging my expertise to create a dynamic website?
+              Let's connect and discuss how my skills align with your project.
+              Contact me for a fruitful conversation!
+            </p>
+            <div class="contact-me-container">
+              <!-- this form using https://formsubmit.co/ -->
+              <form
+                class="contact-me-form"
+                action="https://formsubmit.co/c6183d930d287c7757199ee155aeb478"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea
+                  class="msg-box"
+                  name="Message"
+                  placeholder="Let me know what you think...."
+                  cols="30"
+                  rows="5"
+                ></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="row txt-alignment-2">
+            <div class="col-md-6">
+              <img class="img1" src="img/profile_pic.png" alt="profile_pic" />
+              <img class="img2" src="img/profile_pic.png" alt="profile_pic" />
+              <img class="img3" src="img/profile_pic.png" alt="profile_pic" />
+            </div>
+            <div class="col-md-6">
+              <div class="am1">test1</div>
+              <div class="am2">test2</div>
+              <div class="am3">test3</div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+  </body>
+</html>
