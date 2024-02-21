@@ -108,6 +108,7 @@ header {
   }
   50% {
     color: rgb(0, 255, 242);
+    text-shadow: 0 0 20px rgba(45, 204, 196, 0.9);
   }
   100% {
     color: rgb(108, 168, 164);
@@ -524,13 +525,12 @@ header {
 
 @media screen and (min-width: 996px) and (max-width: 1920px) {
   .section_home {
-    height: 70vh;
+    height: 74vh;
     margin-bottom: 0;
   }
 
-  .section_e,
-  .section_o {
-    height: 120vh;
+  .section_e {
+    height: 100vh;
   }
 }
 
