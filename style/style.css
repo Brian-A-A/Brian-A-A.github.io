@@ -95,6 +95,10 @@ header {
   text-align: center;
 }
 
+.intro-container {
+  height: 45vh;
+}
+
 .format_1 {
   font-size: 1.5rem;
 }
@@ -154,6 +158,7 @@ header {
 .ame_desc {
   margin-top: 40px;
   text-align: center;
+  line-height: 1.8em;
 }
 
 .col-12 {
@@ -513,6 +518,9 @@ header {
   .section_home {
     margin-bottom: 15rem;
   }
+  .intro-container {
+    height: auto;
+  }
 
   .accordion-button {
     font-size: 10px;
@@ -560,16 +568,17 @@ header {
 
 @media (min-width: 1200px) {
   .format_1 {
-    font-size: 2rem;
-  }
-
-  .format_3 {
     font-size: 2.5rem;
   }
 
+  .format_3 {
+    font-size: 3rem;
+  }
+
   .format_4 {
-    font-size: 1.1rem;
-    width: 40rem;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    width: 45rem;
     overflow: hidden;
     font-family: monospace;
     display: inline-block;
