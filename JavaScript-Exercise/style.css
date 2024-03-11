@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.title {
+  color: rgb(238, 235, 231);
+  font-weight: 600;
+  font-size: 2.5em;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1.5em;
+  padding-top: 1.5em;
+}
+
+.qtitle {
+  color: rgb(109, 109, 109);
+  font-weight: 600;
+  font-size: 2.5em;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1.5em;
+  padding-top: 1.5em;
+}
+
+#background_holder_1 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(52, 52, 73, 1) 20%,
+    rgba(62, 62, 96, 1) 40%,
+    rgba(58, 58, 91, 1) 68%,
+    rgba(19, 30, 32, 1) 94%
+  );
+  height: 52em;
+  width: 100%;
+}
+
+#background_holder_2 {
+  background: rgb(16, 16, 107);
+  background: linear-gradient(
+    90deg,
+    rgba(16, 16, 107, 1) 0%,
+    rgba(47, 47, 139, 1) 31%,
+    rgba(53, 63, 133, 1) 63%,
+    rgba(16, 16, 107, 1) 100%
+  );
+  width: 100%;
+}
+
+#background_holder_3 {
+  background: rgb(70, 195, 199);
+  background: linear-gradient(
+    90deg,
+    rgb(74, 157, 182) 0%,
+    rgb(56, 156, 187) 48%,
+    rgba(74, 157, 182) 100%
+  );
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+#q-generator {
+  background-color: rgb(165, 228, 223);
+  color: rgb(109, 109, 109);
+}
+
+.q-container {
+  margin: 10% 5% 0;
+  padding-bottom: 20%;
+}
+
+.q-div {
+  display: grid;
+  align-items: center;
+  height: 250px;
+  font-family: serif;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.q-name-div {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.q-btn {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  margin-top: 30px;
+  padding: 0 10px 5px;
+  background-color: inherit;
+  border: none;
+  color: rgb(109, 109, 109);
+  border-bottom: 1.5px solid rgb(109, 109, 109);
+}
+
+#interactive_boxes {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+#cal_container {
+  background-color: rgb(61, 60, 59);
+  height: 38em;
+  width: 100%;
+  padding: 30px 0px;
+}
+
+#cal_output {
+  background-color: rgb(204, 207, 207);
+  height: 100px;
+  width: 320px;
+  margin: 0px auto;
+  text-align: end;
+}
+
+.num_format {
+  font-size: 2em;
+  padding: 5px 5px 0px 0px;
+}
+
+#cal {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  justify-content: center;
+}
+
+#AC {
+  grid-column: 1/3;
+}
+
+#equal {
+  grid-column: 3/5;
+}
+
+#cal > button {
+  font-size: 1.5em;
+  line-height: 80px;
+  text-align: center;
+  border: solid rgb(192, 191, 191) 1px;
+}
+
+#cal > button:hover {
+  background-color: rgba(170, 168, 168, 0.9);
+}
+
+.cal_button_colored {
+  background-color: rgb(75, 136, 155);
+}
+
+.box {
+  height: 25em;
+  width: 20em;
+  text-align: center;
+  margin: 80px auto;
+  border-radius: 5px;
+  border: solid 2px aliceblue;
+}
+
+.box_title {
+  margin: 50px auto;
+  color: aliceblue;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.submit {
+  color: aliceblue;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid aliceblue;
+  border-radius: 7px;
+  padding: 30px;
+  margin: 50px auto;
+}
+
+#to-do_container {
+  position: relative;
+  height: 40em;
+  width: 100%;
+  background-color: rgb(63, 131, 139);
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#add_box_container {
+  height: 8em;
+  width: 100%;
+  background-color: rgb(149, 236, 207);
+}
+
+.to-do-header > input {
+  margin-top: 30px;
+  height: 50px;
+  width: 60%;
+  line-height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25em;
+  padding: 0px 12px;
+}
+
+#add_button {
+  height: 50px;
+  padding: 2px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(54, 128, 197);
+  font-size: 1.25em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#To-Do_List {
+  overflow-y: scroll;
+  position: absolute;
+  height: 28em;
+  width: 70%;
+  margin: 0 15%;
+  top: 10em;
+  background-color: rgb(36, 39, 38);
+}
+
+li {
+  height: 2.67em;
+  line-height: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(92, 92, 92);
+  font-size: 1em;
+  text-align: left;
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+li:nth-child(odd) {
+  background-color: rgb(59, 59, 59);
+}
+
+.close {
+  color: rgb(226, 53, 53);
+  font-size: 25px;
+  background: none;
+  border: none;
+  float: right;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #to-do_container {
+    width: 80%;
+  }
+
+  .q-container {
+    width: 500px;
+  }
+}
