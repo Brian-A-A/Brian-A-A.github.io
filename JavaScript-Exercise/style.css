@@ -11,8 +11,70 @@
   justify-content: center;
   text-align: center;
   margin: auto;
-  margin-bottom: 1.5em;
-  padding-top: 1.5em;
+  margin-bottom: 1em;
+  padding-top: 1em;
+}
+
+.main-sec-box {
+  background-color: #101010;
+}
+
+.main-sec {
+  background-image: url(../img/js-proj-page-wallpaper-mob.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-width: 2000px;
+  max-height: 1200px;
+}
+
+.proj-icon-container {
+  padding-top: 25%;
+  width: 90%;
+  position: relative;
+  top: 0;
+  animation: moveUp 3s ease forwards;
+  opacity: 0;
+}
+
+@keyframes moveUp {
+  from {
+    top: 100px;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.img-proj {
+  width: 31%;
+}
+
+.js-proj-msg {
+  color: rgb(255, 255, 255);
+  display: none;
+  margin-top: 100%;
+  font-weight: 600;
+  font-size: 1.2rem;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.js-txt {
+  color: #f0db4f;
 }
 
 .qtitle {
@@ -26,52 +88,26 @@
   padding-top: 1.5em;
 }
 
-#background_holder_1 {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(52, 52, 73, 1) 20%,
-    rgba(62, 62, 96, 1) 40%,
-    rgba(58, 58, 91, 1) 68%,
-    rgba(19, 30, 32, 1) 94%
-  );
-  height: 52em;
-  width: 100%;
-}
-
 #background_holder_2 {
-  background: rgb(16, 16, 107);
-  background: linear-gradient(
-    90deg,
-    rgba(16, 16, 107, 1) 0%,
-    rgba(47, 47, 139, 1) 31%,
-    rgba(53, 63, 133, 1) 63%,
-    rgba(16, 16, 107, 1) 100%
-  );
+  background-color: rgb(61, 60, 59);
   width: 100%;
 }
 
-#background_holder_3 {
-  background: rgb(70, 195, 199);
-  background: linear-gradient(
-    90deg,
-    rgb(74, 157, 182) 0%,
-    rgb(56, 156, 187) 48%,
-    rgba(74, 157, 182) 100%
-  );
-  padding-bottom: 50px;
-  width: 100%;
+#To-Do-List {
+  background: #cab498;
+  height: 100vh;
+  max-height: 1200px;
 }
 
 #q-generator {
   background-color: rgb(165, 228, 223);
   color: rgb(109, 109, 109);
+  height: 100vh;
+  max-height: 1200px;
 }
 
 .q-container {
-  margin: 10% 5% 0;
-  padding-bottom: 20%;
+  margin-top: 7em;
 }
 
 .q-div {
@@ -196,18 +232,21 @@
 
 #to-do_container {
   position: relative;
-  height: 40em;
+  height: 34em;
   width: 100%;
-  background-color: rgb(63, 131, 139);
+  background-color: #8d7e6a;
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 #add_box_container {
   height: 8em;
   width: 100%;
-  background-color: rgb(149, 236, 207);
+  background-color: #ad9d89;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .to-do-header > input {
@@ -236,7 +275,7 @@
 #To-Do_List {
   overflow-y: scroll;
   position: absolute;
-  height: 28em;
+  height: 20em;
   width: 70%;
   margin: 0 15%;
   top: 10em;
@@ -269,11 +308,47 @@ li:nth-child(odd) {
 }
 
 @media (min-width: 768px) {
+  .proj-icon-container {
+    padding-top: 70px;
+    width: 600px;
+  }
+
+  .js-proj-msg {
+    margin-top: 60%;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
   #to-do_container {
-    width: 80%;
+    width: 500px;
   }
 
   .q-container {
     width: 500px;
+  }
+
+  #to-do_container {
+    height: 38em;
+  }
+
+  #To-Do_List {
+    height: 26em;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-sec {
+    background-image: url(../img/js-proj-page-wallpaper.jpg);
+    margin: 0 auto;
+  }
+
+  .js-proj-msg {
+    margin-top: 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .js-proj-msg {
+    margin-top: calc(10.5em + 6vw);
   }
 }
