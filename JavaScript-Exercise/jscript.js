@@ -1,3 +1,21 @@
+// Main-Sec Animation Code Starts Here
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  var projIconContainer = document.querySelector(".proj-icon-container");
+  projIconContainer.style.animation = "none";
+  projIconContainer.offsetHeight;
+  projIconContainer.style.animation = null;
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    var jsProjMsg = document.querySelector(".js-proj-msg");
+    jsProjMsg.style.display = "block";
+  }, 3000);
+});
+
+// Main-Sec Animation Code Ends Here
+
 // Quote Generator Code Starts Here
 var qTxt = document.getElementById("q-txt");
 var qName = document.getElementById("q-name");
